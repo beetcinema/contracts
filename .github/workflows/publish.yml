@@ -20,10 +20,10 @@ jobs:
           registry-url: "https://registry.npmjs.org/"
 
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install --frozen-lockfile
 
       - name: Generate TS Protobuf
-        run: pnpm run generate
+        run: npm run generate
 
       - name: Publish Package
         run: npm publish
